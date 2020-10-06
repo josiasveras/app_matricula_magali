@@ -3,10 +3,11 @@ html, body {
 	/*height: 1122px;*/
 	font-family: arial;
 }
-/*
-.formwrapper {
+
+/*.formwrapper {
 	position: absolute;
-	font-size: 13px;text-align: justify;
+	font-size: 13px;
+	text-align: justify;
 
 }*/
 
@@ -108,13 +109,8 @@ img {
 	text-transform: uppercase;
 }
 
-/*Hide print button when printing*/
 @media print {
 	#btnPrint {
-		display: none;
-	}
-
-	#btnNext {
 		display: none;
 	}
 
@@ -129,6 +125,7 @@ img {
     }*/
 }
 
+/*Hide print button when printing*/
 .button {
 	background-color: #4CAF50; /* Green */
 	border: none;

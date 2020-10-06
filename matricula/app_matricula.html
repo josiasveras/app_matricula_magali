@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>App Matrícula</title>
+		<link href="css/style2.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="conteudo">
+
+			<!-- Início Ficha Cadastral -->
+
+			<header>
+				<div class="logo">
+					<img src="imagens/logo-taboao.png">
+				</div>
+
+				<div class="headinfo">
+					<p class="cityhall">Prefeitura Municipal de Taboão da Serra</p>
+					<p class="secretariat">Secretaria Municipal de Educação, Cultura, Ciência e Tecnologia</p>
+				</div>
+			</header>
+
+			<div class="formwrapper">
+				<h2 class="formtitle">FICHA CADASTRAL</h2>
+				<h3>R.A. Nº:</h3>
+
+				<!--<label class="textlead" for="ra">R.A. Nº:</label>
+				 <input type="text" id="ra" name="ra"><br><br> -->
+				<hr style="width:400px;text-align:left;margin-left:0">
+
+				<form action="#">
+					<fieldset>
+					  <legend>DADOS DO ALUNO</legend>
+					  <label class="textlead" for="studentname">Nome:</label>
+					  <!-- Input content to uppercase - style="text-transform:uppercase" -->
+					  <input style="width:650px;" type="text" id="studentname" name="studentname"><br><br>
+
+					  <!-- <label for="genre">Sexo:</label>
+					  <input type="text" id="genre" name="genre"> -->
+
+					  <label for="genre">Sexo:</label>
+						<select style="width:135px;" name="genre" id="genre">
+							<option value=""></option>
+				  			<option value="feminino">Feminino</option>
+				  			<option value="masculino">Masculino</option>
+						</select>
+
+					  <label for="race">Etnia:</label>
+					  <input type="text" id="race" name="race">
+
+					  <label for="birthday">Data de nascimento:</label>
+					  <input type="date" id="birthday" name="birthday"><br><br>
+
+					  <label for="place">Natural de:</label>
+					  <input style="width:368px;" type="text" id="place" name="place">
+
+					  <label for="uf">U.F:</label>
+					  <input style="width:200px;" type="text" id="uf" name="uf"><br><br>
+
+					  <label for="birth">Cert. Nasc. Nº:</label>
+					  <input style="width:592px;" type="text" id="birth" name="birth">
+
+					  <!-- <label for="book">Livro:</label>
+					  <input type="text" id="book" name="book"><br><br>
+
+					  <label for="sheet">fls:</label>
+					  <input type="text" id="sheet" name="sheet">
+
+					  <label for="district">Distrito:</label>
+					  <input type="text" id="district" name="district"><br><br>
+
+					  <label for="city">Cidade:</label>
+					  <input type="text" id="city" name="city">
+
+					  <label for="uf">UF:</label>
+					  <input type="text" id="uf" name="uf"><br><br> -->
+
+					</fieldset>
+					<br>
+					<fieldset>
+					  <legend>FILIAÇÃO</legend>
+					  <label class="textlead" for="mothername">Nome da mãe:</label>
+					  <input style="width:595px;" type="text" id="mothername" name="mothername"><br><br>
+
+					  <label for="motherinst">Grau de instrução:</label>
+					  <input style="width:228px;" type="text" id="motherinst" name="motherinst">
+
+					  <label for="motherprofession">Profissão:</label>
+					  <input style="width:228px;" type="text" id="motherprofession" name="motherprofession"><br><br>
+
+					  <label for="motherwork">Trabalha? Local:</label>
+					  <input style="width:567px;" type="text" id="motherwork" name="motherwork"><br><br>
+
+					  <label for="motherphone">Telefone:</label>
+					  <input type="text" id="motherphone" name="motherphone">
+
+					  <label for="mothermsgphone">Recado:</label>
+					  <input style="width:378px;" type="text" id="mothermsgphone" name="mothermsgphone"><br><br>
+
+					  <br><br>
+
+					  <label class="textlead" for="fathername">Nome do pai:</label>
+					  <input style="width:602px;" type="text" id="fathername" name="fathername"><br><br>
+
+					  <label for="fatherinst">Grau de instrução:</label>
+					  <input style="width:228px;" type="text" id="fatherinst" name="fatherinst">
+
+					  <label for="fatherprofession">Profissão:</label>
+					  <input style="width:228px;" type="text" id="fatherprofession" name="fatherprofession"><br><br>
+
+					  <label for="fatherwork">Trabalha? Local:</label>
+					  <input style="width:567px;" type="text" id="fatherwork" name="fatherwork"><br><br>
+
+					  <label for="fatherphone">Telefone:</label>
+					  <input type="text" id="fatherphone" name="fatherphone">
+
+					  <label for="fathermsgphone">Recado:</label>
+					  <input style="width:378px;" type="text" id="fathermsgphone" name="fathermsgphone"><br><br>
+
+					  <label for="coupleinfo">Estado civil dos pais:</label>
+					  <input style="width:537px;" type="text" id="coupleinfo" name="coupleinfo"><br><br>
+
+					</fieldset>
+
+					<br>
+					<fieldset>
+					  <legend>ENDEREÇO</legend>
+					  <label class="textlead" for="street">Rua:</label>
+					  <input style="width:567px;" type="text" id="street" name="street">
+
+					  <label class="num" for="num">Nº:</label>
+					  <input style="width:60px;" type="number" id="num" name="num"><br><br>
+
+					  <label for="neighborhood">Bairro:</label>
+					  <input style="width:257px;" type="text" id="neighborhood" name="neighborhood">
+
+					  <label for="city">Cidade:</label>
+					  <input type="text" id="city" name="city">
+
+					  <label for="cep">CEP:</label>
+					  <input style="width:100px;" type="text" id="cep" name="cep"><br><br>
+
+					  <label for="homephone">Tel. Residencial:</label>
+					  <input style="width:222px;" type="text" id="homephone" name="homephone">
+
+					  <label for="businessphone">Tel. Comercial:</label>
+					  <input style="width:222px;" type="text" id="businessphone" name="businessphone"><br><br>
+
+					  <label for="msgphone">Tel. Recado:</label>
+					  <input type="text" id="msgphone" name="msgphone">
+
+					  <label for="msgphonename">Nome:</label>
+					  <input style="width:376px;" type="text" id="msgphonename" name="msgphonename"><br><br>
+
+					  <label for="urgencyperson">Em caso de urgência chamar:</label>
+					  <input style="width:250px;" type="text" id="urgencyperson" name="urgencyperson">
+
+					  <label for="urgencyphone">Fone:</label>
+					  <input type="text" id="urgencyphone" name="urgencyphone"><br><br>
+
+					</fieldset>
+
+					<br>
+					<fieldset>
+					  <legend>PROCEDÊNCIA DO ALUNO</legend>
+					  <label class="textlead" for="studentschool">Escola:</label>
+					  <input style="width:632px;" type="text" id="studentschool" name="studentschool"><br><br>
+
+					  <label for="degree">Grau:</label>
+					  <input type="text" id="degree" name="degree">
+
+					  <label for="serie">Série:</label>
+					  <input type="text" id="serie" name="serie">
+
+					  <label for="course">Curso:</label>
+					  <input style="width:188px;" type="text" id="course" name="course"><br><br>
+
+					  <label for="studentcity">Cidade:</label>
+					  <input style="width:432px;" type="text" id="studentcity" name="studentcity">
+
+					  <label for="studentuf">UF:</label>
+					  <input type="text" id="studentuf" name="studentuf"><br><br>
+
+					  	<label for="schoolinfo">Já estudou nesta escola:</label>
+						<select style="width:66px;" name="schoolinfo" id="schoolinfo">
+							<option value=""></option>
+				  			<option value="sim">Sim</option>
+				  			<option value="nao">Não</option>
+						</select>
+
+						<label for="studyinfo">Já estudou na rede municipal de Taboão da Serra:</label>
+						<select style="width:66px;" name="studyinfo" id="studyinfo">
+							<option value=""></option>
+				  			<option value="sim">Sim</option>
+				  			<option value="nao">Não</option>
+						</select>
+
+					</fieldset>
+
+					<br><br>
+
+					<!-- <hr style="width:50%;text-align:left;margin-left:0"> -->
+					
+					<!-- <input type="text" id="func" name="func">
+					<hr style="width:400px;text-align:left;margin-left:">-->
+					<br><br>
+					<label for="func">Funcionário da U.E:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<label for="registration">Data da matrícula:</label>
+					<input type="date" id="registration" name=registration>
+
+					<!-- <button id="btnPrint" onclick="window.print()">Imprimir</button> -->
+
+					<!-- Hide print button when printing (style.css) --><br>
+					<input class="button" type="button" id="btnPrint" onclick="window.print();" value="Imprimir" />
+
+
+				</form>
+			</div>
+		</div>
+		<!-- Fim Ficha Cadastral -->
+
+		<!-- Início Ficha matricula -->
+			<header>
+				<div class="logo">
+					<img src="imagens/logo-taboao.png">
+				</div>
+
+				<div class="headinfo">
+					<p class="cityhall">Prefeitura Municipal de Taboão da Serra</p>
+					<p class="secretariat">Secretaria Municipal de Educação, Cultura, Ciência e Tecnologia</p>
+				</div>
+			</header>
+
+			<div class="formwrapper">
+				<h1 class="formtitle">FICHA MATRÍCULA</h1>
+
+				<form action="#">
+					<fieldset>
+					  <legend>MATRÍCULA</legend>
+					  <label for="studentregfor">Solicito matrícula para:</label>
+					  <input style="width:554px;" type="text" id="studentregfor" name="studentregfor">
+
+					  <p>Declaro acatar as normas regimentares desta unidade escolar.</p>
+
+					  Taboão da Serra <input type="text" id="location" name="location">
+
+					  <br><br><br><br>
+					  <hr style="width:400px;text-align:left;margin-left:0">
+					  <p>Assinatura do responsável</p>
+					</fieldset>
+
+					<br>
+
+					<fieldset>
+					  <legend>RENOVAÇÃO DE MATRÍCULA</legend>
+					  
+					  <table style="width:100%" class="tblmat">
+					  	<tr>
+						    <th colspan="3">Movimentação do aluno</th>
+						    <th>Responsável</th>
+						    <th>Diretor</th>
+						</tr>
+						  <tr>
+						    <th>Ano</th>
+						    <th>Estágio/ano</th>
+						    <th>Idade</th>
+						    <th>Assinatura</th>
+						    <th>Assinatura</th>
+						  </tr>
+						  <tr>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						  </tr>
+						  <tr>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						  </tr>
+						  <tr>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						  </tr>
+						  <tr>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						  </tr>
+						  <tr>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						  </tr>
+						  <tr>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						  </tr>
+						</table>
+					</fieldset>
+
+					<br>
+
+					<fieldset>
+					  <legend>DESISTÊNCIA</legend>
+						<label for="cancelreg">Desistência ou cancelamento em:</label>
+						<input type="text" id="cancelreg" name=cancelreg><br>
+
+						<!-- <table class="tblmat">
+							<tr>
+						    <th>Motivo</th>
+						  	</tr>
+							<tr>
+							   <td></td>
+							 </tr>	
+						</table> -->
+
+						<p>Motivo:</p>
+						<!-- <textarea style="overflow: hidden;" id="reason" name="reason" rows="8" cols="100"></textarea> -->
+						<table style="width:100%" class="tblreason">
+							<tr>
+								<td></td>
+							</tr>
+							<tr>
+								<td ></td>
+							</tr>
+							<tr>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+							</tr>
+						</table>
+
+
+						<br><br>
+						<label for="registration">Taboão da Serra:</label>
+						<input type="text" id="registration" name=registration><br><br>
+
+						<br><br>
+						  <hr style="width:400px;text-align:left;margin-left:0">
+						  <p>Assinatura do responsável</p>
+
+					</fieldset>
+
+					<br>
+
+					<fieldset>
+					  <legend>TRANSFERÊNCIA</legend>
+
+						  <label for="func">Solicito transferência para:</label>
+						<input style="width:517px;" type="text" id="func" name="func"><br><br>
+
+						<label for="registration">Taboão da Serra:</label>
+						<input type="text" id="registration" name=registration>
+
+						<br><br><br>
+
+						<hr style="width:400px;text-align:left;margin-left:0">
+						  <p>Assinatura responsável</p>
+
+						 <br>
+
+						<hr style="width:400px;text-align:left;margin-left:0">
+						  <p>Assinatura diretor</p>
+
+					</fieldset>
+
+					  <!-- Hide print button when printing (style.css) -->
+					<input class="button" type="button" id="btnPrint" onclick="window.print();" value="Imprimir" />
+
+				</form>
+			</div>
+		<!-- Fim Ficha Matricula -->
+
+		<!-- Início Ficha Saúde -->
+		<header>
+				<div class="logo">
+					<img src="imagens/logo-taboao.png">
+				</div>
+
+				<div class="headinfo">
+					<p class="cityhall">Prefeitura Municipal de Taboão da Serra</p>
+					<p class="secretariat">Secretaria Municipal de Educação, Cultura, Ciência e Tecnologia</p>
+				</div>
+			</header>
+
+			<div class="formwrapper">
+				<h1 class="formtitle">Saúde da Criança</h1>
+
+				<form action="#">
+					<fieldset>
+					  <legend>RENOVAÇÃO DE MATRÍCULA</legend>
+					  
+						<table class="tblhealth">
+					  		<tr>
+						    	<th>Diagnóstico</th>
+						    	<th>Sim</th>
+						    	<th>Não</th>
+						    	<th>Observação</th>
+							</tr>
+							<tr>
+						    	<td>Dificuldade de Audição</td>
+						    	<td><input type="radio" id="yes" name="hearingdifficulty" value="yes"></td>
+						    	<td><input type="radio" id="no" name="hearingdifficulty" value="no"></td>
+						    	<td style="width: 500px;"></td>
+							</tr>
+							<tr>
+						    	<td>Dores de ouvido</td>
+						    	<td><input type="radio" id="yes" name="earaches" value="yes"></td>
+						    	<td><input type="radio" id="no" name="earaches" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Dificuldades na fala</td>
+						    	<td><input type="radio" id="yes" name="speechdifficulties" value="yes"></td>
+						    	<td><input type="radio" id="no" name="speechdifficulties" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Deficiência física</td>
+						    	<td><input type="radio" id="yes" name="physicaldisability" value="yes"></td>
+						    	<td><input type="radio" id="no" name="physicaldisability" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Deficiência mental</td>
+						    	<td><input type="radio" id="yes" name="mentaldisability" value="yes"></td>
+						    	<td><input type="radio" id="no" name="mentaldisability" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Dificuldade na visão</td>
+						    	<td><input type="radio" id="yes" name="visiondifficulty" value="yes"></td>
+						    	<td><input type="radio" id="no" name="visiondifficulty" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Epilepsia</td>
+						    	<td><input type="radio" id="yes" name="epilepsy" value="yes"></td>
+						    	<td><input type="radio" id="no" name="epilepsy" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Convulsão</td>
+						    	<td><input type="radio" id="yes" name="seizure" value="yes"></td>
+						    	<td><input type="radio" id="no" name="seizure" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Febre com frequência</td>
+						    	<td><input type="radio" id="yes" name="fever" value="yes"></td>
+						    	<td><input type="radio" id="no" name="fever" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>hiv</td>
+						    	<td><input type="radio" id="yes" name="hiv" value="yes"></td>
+						    	<td><input type="radio" id="no" name="hiv" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Sarampo</td>
+						    	<td><input type="radio" id="yes" name="measles" value="yes"></td>
+						    	<td><input type="radio" id="no" name="measles" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Meningite</td>
+						    	<td><input type="radio" id="yes" name="meningitis" value="yes"></td>
+						    	<td><input type="radio" id="no" name="meningitis" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Catapora</td>
+						    	<td><input type="radio" id="yes" name="chickenpox" value="yes"></td>
+						    	<td><input type="radio" id="no" name="chickenpox" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Rubéola</td>
+						    	<td><input type="radio" id="yes" name="rubella" value="yes"></td>
+						    	<td><input type="radio" id="no" name="rubella" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Caxumba</td>
+						    	<td><input type="radio" id="yes" name="mumps" value="yes"></td>
+						    	<td><input type="radio" id="no" name="mumps" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Dengue</td>
+						    	<td><input type="radio" id="yes" name="dengue" value="yes"></td>
+						    	<td><input type="radio" id="no" name="dengue" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Alergia/medicamento</td>
+						    	<td><input type="radio" id="yes" name="yesno" value="yes"></td>
+						    	<td><input type="radio" id="no" name="yesno" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Alergia/alimentar</td>
+						    	<td><input type="radio" id="yes" name="allergymedicine" value="yes"></td>
+						    	<td><input type="radio" id="no" name="allergymedicine" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td style="text-align: left;">Alergia/picada de inseto</td>
+						    	<td><input type="radio" id="yes" name="allergybugbite" value="yes"></td>
+						    	<td><input type="radio" id="no" name="allergybugbite" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Engasga com facilidade</td>
+						    	<td><input type="radio" id="yes" name="chokes" value="yes"></td>
+						    	<td><input type="radio" id="no" name="chokes" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Refluxo</td>
+						    	<td><input type="radio" id="yes" name="reflux" value="yes"></td>
+						    	<td><input type="radio" id="no" name="reflux" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Ficou internado</td>
+						    	<td><input type="radio" id="yes" name="hospitalized" value="yes"></td>
+						    	<td><input type="radio" id="no" name="hospitalized" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Síndrome</td>
+						    	<td><input type="radio" id="yes" name="syndrome" value="yes"></td>
+						    	<td><input type="radio" id="no" name="syndrome" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+							<tr>
+						    	<td>Outro</td>
+						    	<td><input type="radio" id="yes" name="other" value="yes"></td>
+						    	<td><input type="radio" id="no" name="other" value="no"></td>
+						    	<td contenteditable="true"></td>
+							</tr>
+						</table>
+
+						<br>
+
+						<label for="healthplace">Está matriculado em algum posto de saúde?</label>
+						<select name="healthplace" id="healthplace">
+							<option value=""></option>
+				  			<option value="sim">Sim</option>
+				  			<option value="nao">Não</option>
+						</select>
+						<label for="healthplacelocation">Qual?</label>
+						<input type="text" name="healthplacelocation">
+
+					</fieldset>
+
+					<br><br><br>
+
+						<hr style="width:400px;text-align:left;margin-left:0">
+						  <p>Assinatura responsável</p>
+
+						 <br><br>
+
+						<hr style="width:400px;text-align:left;margin-left:0">
+						  <p>Funcionário da U.E</p>
+
+					  <!-- Hide print button when printing (style.css) -->
+					<input class="button" type="button" id="btnPrint" onclick="window.print();" value="Imprimir" />
+
+				</form>
+			</div>
+		<!-- Fim Ficha Saúde -->
+
+		<!-- Início Ficha Termo de Compromisso -->
+		<header>
+				<div class="logo">
+					<img src="imagens/logo-taboao.png">
+				</div>
+
+				<div class="headinfo">
+					<p class="cityhall">Prefeitura Municipal de Taboão da Serra</p>
+
+					<p class="secretariat">Secretaria Municipal de Educação, Cultura, Ciência e Tecnologia</p>
+
+					<!-- <p class="school">EMI MAGALI</p>
+
+					<p class="address">Rua Sebastião Moraes de Camargo, 282 - Jardim Suiná - Taboão da Serra / SP </p>
+ 
+					<p class="phone">Fone: (11) 4137-8561 Email: magali@educacao.ts.sp.gov.br </p>-->
+				</div>
+			</header>
+
+			<div class="formwrapper">
+				<h1 class="formtitle">Termo de Compromisso</h1>
+
+				<form action="#">
+					<fieldset>
+
+						<br>
+
+						<label for="me">Eu</label>
+						<input style="width:500px;" type="text" id="me" name="me">
+						
+						<label for="student">, responsável pelo aluno(a)</label>
+						<input style="width:500px;" type="text" id="student" name="student">
+
+						<label for="entrance">, matriculado nesta unidade escolar, cumprirei o horário de funcionamento da mesma: entrada </label>
+						<input type="time" id="entrance" name="entrance">
+
+						<label for="exit">, saída </label>
+						<input type="time" id="exit" name="exit">
+
+						<label for="class">, na turma </label>
+						<input type="text" id="class" name="class">
+
+						<label for="responsibles">, acompanhado pelas seguintes pessoas autorizadas: </label>
+						<input style="width:730px;" type="text" id="responsibles" name="responsibles">
+
+						<p>Minha inteira responsabilidade. Na qualidade de pai/mãe ou reponsável legal, estou ciente de que tenho o prazer de zelar segurança, saúde e assiduidade escolar e higiene. Quando o aluno(a) estiver doente, terei a unidade escolar informada, bem como quando houver qualquer alteração de endereço, telefone ou pessoas autorizadas a retirar o aluno(a), me responsabilizarei em comunicar a unidade escolar.</p>
+
+						<br>
+
+						<input type="date" name="termdate">
+
+						<br><br><br>
+
+						<hr style="width:400px;text-align:left;margin-left:0">
+						  <p>Assinatura responsável</p>
+
+					</fieldset>
+
+					<br>
+
+					<fieldset>
+					  <legend>Descumprimento de horário</legend>
+
+						<br>
+
+						<p>Declaro não ter cumprido horário estabelecido por esta Unidade Escolar.</p>
+						<label for="timefail">Data: </label>
+						<input type="text" id="timefail" name="timefail">
+
+						<label for="time">Hora de saída: </label>
+						<input type="text" id="time" name="time">
+
+						<br><br><br>
+
+						<hr style="width:400px;text-align:left;margin-left:0">
+						  <p>Assinatura responsável</p>
+
+						<br>
+
+						<p>Declaro não ter cumprido horário estabelecido por esta Unidade Escolar.</p>
+						<label for="timefail">Data: </label>
+						<input type="text" id="timefail" name="timefail">
+
+						<label for="time">Hora de saída: </label>
+						<input type="text" id="time" name="time">
+
+						<br><br><br>
+
+						<hr style="width:400px;text-align:left;margin-left:0">
+						  <p>Assinatura responsável</p>
+
+						<br>
+
+						<p>Declaro não ter cumprido horário estabelecido por esta Unidade Escolar.</p>
+						<label for="timefail">Data: </label>
+						<input type="text" id="timefail" name="timefail">
+
+						<label for="time">Hora de saída: </label>
+						<input type="text" id="time" name="time">
+
+						<br><br><br>
+
+						<hr style="width:400px;text-align:left;margin-left:0">
+						  <p>Assinatura responsável</p>
+
+						<br>
+
+						<p>Declaro não ter cumprido horário estabelecido por esta Unidade Escolar.</p>
+						<label for="timefail">Data: </label>
+						<input type="text" id="timefail" name="timefail">
+
+						<label for="time">Hora de saída: </label>
+						<input type="text" id="time" name="time">
+
+						<br><br><br>
+
+						<hr style="width:400px;text-align:left;margin-left:0">
+						  <p>Assinatura responsável</p>
+
+					</fieldset>
+
+					  <!-- Hide print button when printing (style.css) -->
+					<input class="button" type="button" id="btnPrint" onclick="window.print();" value="Imprimir" />
+
+				</form>
+			</div>
+			<!-- Fim Ficha Termo de Compromisso -->
+
+			<!-- Início Autorização de Imagem e Som -->
+			<header>
+				<div class="logo">
+					<img src="imagens/logo-taboao.png">
+				</div>
+
+				<div class="headinfo">
+					<p class="cityhall">Prefeitura Municipal de Taboão da Serra</p>
+
+					<p class="secretariat">Secretaria Municipal de Educação, Cultura, Ciência e Tecnologia</p>
+
+					<p class="school">EMI MAGALI</p>
+
+			   <!-- <p class="address">Rua Sebastião Moraes de Camargo, 282 - Jardim Suiná - Taboão da Serra / SP </p>
+ 
+					<p class="phone">Fone: (11) 4137-8561 Email: magali@educacao.ts.sp.gov.br </p>-->
+				</div>
+			</header>
+
+			<div class="formwrapper">
+				<h1 class="formtitle">Termo Autorização de Imagem e Som</h1>
+
+				<form action="#">
+					<!-- <fieldset> -->
+
+						<br><br><br><br><br><br><br><br>
+
+						<label for="placeday">Taboão da Serra, </label>
+						<input type="number" id="placeday" name="placeday">
+
+						<label for="placemonth">de, </label>
+						<input style="width:220px;" type="text" id="placemonth" name="placemonth">
+						<!-- <select id="placemonth" name="placemonth">
+							<option>Escolha o mês</option>
+							<option value="01">Janeiro</option>
+							<option value="02">Fevereiro</option>
+							<option value="03">Março</option>
+							<option value="04">Abril</option>
+							<option value="05">Maio</option>
+							<option value="06">Junho</option>
+							<option value="07">Julho</option>
+							<option value="08">Agosto</option>
+							<option value="09">Setembro</option>
+							<option value="10">Outubro</option>
+							<option value="11">Novembro</option>
+							<option value="12">Dezembro</option>
+						</select> -->
+
+						<label for="placeyear">de, </label>
+						<input type="number" id="placeyear" name="placeyear">
+
+						<br><br><br><br><br><br><br><br><br><br>
+
+						<label for="me">Eu</label>
+						<input style="width:714px;" type="text" id="me" name="me">
+
+						<label for="i">Portador do RG: </label>
+						<input style="width:607px;" type="number" id="rg" name="rg">
+
+						<label for="child">Responsável pelo menor </label>
+						<input style="width:546px;" type="text" id="child" name="child">
+						regularmente matriculado nesta Unidade Escolar.
+
+						<br><br><br><br>
+
+						<label for="able">Autorizo </label>
+						<input type="radio" id="able" name="ableunable" value="autorizo"><br>
+
+						<br>
+
+						<label for="unable">Não autorizo </label>
+						<input type="radio" id="unable" name="ableunable" value="naoautorizo">
+
+						<br><br><br>
+
+						<p>Que a imagem e som do mesmo, seja utilizada para divulgar nas redes sociais e demais meios de comunicação da escola, os trabalhos realizados pela mesma e pela Secretaria de Educação Municipal, sem fins lucrativos.</p>
+						<p>Sem mais,</p>
+
+						<br><br><br><br><br><br><br><br>
+
+						<hr style="width:400px;text-align:left;margin-left:0">
+						  <p>Assinatura responsável</p>
+
+					<!-- </fieldset> -->
+
+					  <!-- Hide print button when printing (style.css) -->
+					<input class="button" type="button" id="btnPrint" onclick="window.print();" value="Imprimir" />
+
+				</form>
+			</div>
+			<!-- Fim Autorização de Imagem e Som -->
+
+	</body>
+</html>

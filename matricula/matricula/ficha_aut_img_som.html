@@ -1,0 +1,102 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>Ficha autorização de imagem e som</title>
+	<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="conteudo">
+
+			<header>
+				<div class="logo">
+					<img src="imagens/logo-taboao.png">
+				</div>
+
+				<div class="headinfo">
+					<p class="cityhall">Prefeitura Municipal de Taboão da Serra</p>
+
+					<p class="secretariat">Secretaria Municipal de Educação, Cultura, Ciência e Tecnologia</p>
+
+					<p class="school">EMI MAGALI</p>
+
+			   <!-- <p class="address">Rua Sebastião Moraes de Camargo, 282 - Jardim Suiná - Taboão da Serra / SP </p>
+ 
+					<p class="phone">Fone: (11) 4137-8561 Email: magali@educacao.ts.sp.gov.br </p>-->
+				</div>
+			</header>
+
+			<div class="formwrapper">
+				<h1 class="formtitle">Termo Autorização de Imagem e Som</h1>
+
+				<form action="#">
+					<!-- <fieldset> -->
+
+						<br><br><br><br><br><br><br><br>
+
+						<label for="placeday">Taboão da Serra, </label>
+						<input type="number" id="placeday" name="placeday">
+
+						<label for="placemonth">de, </label>
+						<input style="width:220px;" type="text" id="placemonth" name="placemonth">
+						<!-- <select id="placemonth" name="placemonth">
+							<option>Escolha o mês</option>
+							<option value="01">Janeiro</option>
+							<option value="02">Fevereiro</option>
+							<option value="03">Março</option>
+							<option value="04">Abril</option>
+							<option value="05">Maio</option>
+							<option value="06">Junho</option>
+							<option value="07">Julho</option>
+							<option value="08">Agosto</option>
+							<option value="09">Setembro</option>
+							<option value="10">Outubro</option>
+							<option value="11">Novembro</option>
+							<option value="12">Dezembro</option>
+						</select> -->
+
+						<label for="placeyear">de, </label>
+						<input type="number" id="placeyear" name="placeyear">
+
+						<br><br><br><br><br><br><br><br><br><br>
+
+						<label for="me">Eu</label>
+						<input style="width:714px;" type="text" id="me" name="me">
+
+						<label for="i">Portador do RG: </label>
+						<input style="width:607px;" type="number" id="rg" name="rg">
+
+						<label for="child">Responsável pelo menor </label>
+						<input style="width:546px;" type="text" id="child" name="child">
+						regularmente matriculado nesta Unidade Escolar.
+
+						<br><br><br><br>
+
+						<label for="able">Autorizo </label>
+						<input type="radio" id="able" name="ableunable" value="autorizo"><br>
+
+						<br>
+
+						<label for="unable">Não autorizo </label>
+						<input type="radio" id="unable" name="ableunable" value="naoautorizo">
+
+						<br><br><br>
+
+						<p>Que a imagem e som do mesmo, seja utilizada para divulgar nas redes sociais e demais meios de comunicação da escola, os trabalhos realizados pela mesma e pela Secretaria de Educação Municipal, sem fins lucrativos.</p>
+						<p>Sem mais,</p>
+
+						<br><br><br><br><br><br><br><br>
+
+						<hr style="width:400px;text-align:left;margin-left:0">
+						  <p>Assinatura responsável</p>
+
+					<!-- </fieldset> -->
+
+					  <!-- Hide print button when printing (style.css) -->
+					<input class="button" type="button" id="btnPrint" onclick="window.print();" value="Imprimir" />
+
+				</form>
+			</div>
+		</div>
+
+	</body>
+	</html>

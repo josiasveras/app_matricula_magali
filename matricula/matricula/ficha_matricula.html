@@ -1,0 +1,177 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>Ficha Matrícula</title>
+	<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="conteudo">
+
+			<header>
+				<div class="logo">
+					<img src="imagens/logo-taboao.png">
+				</div>
+
+				<div class="headinfo">
+					<p class="cityhall">Prefeitura Municipal de Taboão da Serra</p>
+					<p class="secretariat">Secretaria Municipal de Educação, Cultura, Ciência e Tecnologia</p>
+				</div>
+			</header>
+
+			<div class="formwrapper">
+				<h1 class="formtitle">FICHA MATRÍCULA</h1>
+
+				<form action="#">
+					<fieldset>
+					  <legend>MATRÍCULA</legend>
+					  <label for="studentregfor">Solicito matrícula para:</label>
+					  <input style="width:554px;" type="text" id="studentregfor" name="studentregfor">
+
+					  <p>Declaro acatar as normas regimentares desta unidade escolar.</p>
+
+					  Taboão da Serra <input type="text" id="location" name="location">
+
+					  <br><br><br><br>
+					  <hr style="width:400px;text-align:left;margin-left:0">
+					  <p>Assinatura do responsável</p>
+					</fieldset>
+
+					<br>
+
+					<fieldset>
+					  <legend>RENOVAÇÃO DE MATRÍCULA</legend>
+					  
+					  <table style="width:100%" class="tblmat">
+					  	<tr>
+						    <th colspan="3">Movimentação do aluno</th>
+						    <th>Responsável</th>
+						    <th>Diretor</th>
+						</tr>
+						  <tr>
+						    <th>Ano</th>
+						    <th>Estágio/ano</th>
+						    <th>Idade</th>
+						    <th>Assinatura</th>
+						    <th>Assinatura</th>
+						  </tr>
+						  <tr>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						  </tr>
+						  <tr>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						  </tr>
+						  <tr>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						  </tr>
+						  <tr>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						  </tr>
+						  <tr>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						  </tr>
+						  <tr>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						  </tr>
+						</table>
+					</fieldset>
+
+					<br>
+
+					<fieldset>
+					  <legend>DESISTÊNCIA</legend>
+						<label for="cancelreg">Desistência ou cancelamento em:</label>
+						<input type="text" id="cancelreg" name=cancelreg><br>
+
+						<!-- <table class="tblmat">
+							<tr>
+						    <th>Motivo</th>
+						  	</tr>
+							<tr>
+							   <td></td>
+							 </tr>	
+						</table> -->
+
+						<p>Motivo:</p>
+						<!-- <textarea style="overflow: hidden;" id="reason" name="reason" rows="8" cols="100"></textarea> -->
+						<table style="width:100%" class="tblreason">
+							<tr>
+								<td></td>
+							</tr>
+							<tr>
+								<td ></td>
+							</tr>
+							<tr>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+							</tr>
+						</table>
+
+
+						<br><br>
+						<label for="registration">Taboão da Serra:</label>
+						<input type="text" id="registration" name=registration><br><br>
+
+						<br><br>
+						  <hr style="width:400px;text-align:left;margin-left:0">
+						  <p>Assinatura do responsável</p>
+
+					</fieldset>
+
+					<br>
+
+					<fieldset>
+					  <legend>TRANSFERÊNCIA</legend>
+
+						  <label for="func">Solicito transferência para:</label>
+						<input style="width:517px;" type="text" id="func" name="func"><br><br>
+
+						<label for="registration">Taboão da Serra:</label>
+						<input type="text" id="registration" name=registration>
+
+						<br><br><br>
+
+						<hr style="width:400px;text-align:left;margin-left:0">
+						  <p>Assinatura responsável</p>
+
+						 <br>
+
+						<hr style="width:400px;text-align:left;margin-left:0">
+						  <p>Assinatura diretor</p>
+
+					</fieldset>
+
+					  <!-- Hide print button when printing (style.css) -->
+					<input class="button" type="button" id="btnPrint" onclick="window.print();" value="Imprimir" />
+
+				</form>
+			</div>
+		</div>
+
+	</body>
+	</html>

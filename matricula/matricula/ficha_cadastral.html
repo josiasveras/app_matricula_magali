@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ficha Cadastral</title>
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="conteudo">
+
+			<header>
+				<div class="logo">
+					<img src="imagens/logo-taboao.png">
+				</div>
+
+				<div class="headinfo">
+					<p class="cityhall">Prefeitura Municipal de Taboão da Serra</p>
+					<p class="secretariat">Secretaria Municipal de Educação, Cultura, Ciência e Tecnologia</p>
+				</div>
+			</header>
+
+			<div class="formwrapper">
+				<h2 class="formtitle">FICHA CADASTRAL</h2>
+				<h3>R.A. Nº:</h3>
+
+				<!--<label class="textlead" for="ra">R.A. Nº:</label>
+				 <input type="text" id="ra" name="ra"><br><br> -->
+				<hr style="width:400px;text-align:left;margin-left:0">
+
+				<form action="#">
+					<fieldset>
+					  <legend>DADOS DO ALUNO</legend>
+					  <label class="textlead" for="studentname">Nome:</label>
+					  <!-- Input content to uppercase - style="text-transform:uppercase" -->
+					  <input style="width:650px;" type="text" id="studentname" name="studentname"><br><br>
+
+					  <!-- <label for="genre">Sexo:</label>
+					  <input type="text" id="genre" name="genre"> -->
+
+					  <label for="genre">Sexo:</label>
+						<select style="width:135px;" name="genre" id="genre">
+							<option value=""></option>
+				  			<option value="feminino">Feminino</option>
+				  			<option value="masculino">Masculino</option>
+						</select>
+
+					  <label for="race">Etnia:</label>
+					  <input type="text" id="race" name="race">
+
+					  <label for="birthday">Data de nascimento:</label>
+					  <input type="date" id="birthday" name="birthday"><br><br>
+
+					  <label for="place">Natural de:</label>
+					  <input style="width:368px;" type="text" id="place" name="place">
+
+					  <label for="uf">U.F:</label>
+					  <input style="width:200px;" type="text" id="uf" name="uf"><br><br>
+
+					  <label for="birth">Cert. Nasc. Nº:</label>
+					  <input style="width:592px;" type="text" id="birth" name="birth">
+
+					  <!-- <label for="book">Livro:</label>
+					  <input type="text" id="book" name="book"><br><br>
+
+					  <label for="sheet">fls:</label>
+					  <input type="text" id="sheet" name="sheet">
+
+					  <label for="district">Distrito:</label>
+					  <input type="text" id="district" name="district"><br><br>
+
+					  <label for="city">Cidade:</label>
+					  <input type="text" id="city" name="city">
+
+					  <label for="uf">UF:</label>
+					  <input type="text" id="uf" name="uf"><br><br> -->
+
+					</fieldset>
+					<br>
+					<fieldset>
+					  <legend>FILIAÇÃO</legend>
+					  <label class="textlead" for="mothername">Nome da mãe:</label>
+					  <input style="width:595px;" type="text" id="mothername" name="mothername"><br><br>
+
+					  <label for="motherinst">Grau de instrução:</label>
+					  <input style="width:228px;" type="text" id="motherinst" name="motherinst">
+
+					  <label for="motherprofession">Profissão:</label>
+					  <input style="width:228px;" type="text" id="motherprofession" name="motherprofession"><br><br>
+
+					  <label for="motherwork">Trabalha? Local:</label>
+					  <input style="width:567px;" type="text" id="motherwork" name="motherwork"><br><br>
+
+					  <label for="motherphone">Telefone:</label>
+					  <input type="text" id="motherphone" name="motherphone">
+
+					  <label for="mothermsgphone">Recado:</label>
+					  <input style="width:378px;" type="text" id="mothermsgphone" name="mothermsgphone"><br><br>
+
+					  <br><br>
+
+					  <label class="textlead" for="fathername">Nome do pai:</label>
+					  <input style="width:602px;" type="text" id="fathername" name="fathername"><br><br>
+
+					  <label for="fatherinst">Grau de instrução:</label>
+					  <input style="width:228px;" type="text" id="fatherinst" name="fatherinst">
+
+					  <label for="fatherprofession">Profissão:</label>
+					  <input style="width:228px;" type="text" id="fatherprofession" name="fatherprofession"><br><br>
+
+					  <label for="fatherwork">Trabalha? Local:</label>
+					  <input style="width:567px;" type="text" id="fatherwork" name="fatherwork"><br><br>
+
+					  <label for="fatherphone">Telefone:</label>
+					  <input type="text" id="fatherphone" name="fatherphone">
+
+					  <label for="fathermsgphone">Recado:</label>
+					  <input style="width:378px;" type="text" id="fathermsgphone" name="fathermsgphone"><br><br>
+
+					  <label for="coupleinfo">Estado civil dos pais:</label>
+					  <input style="width:537px;" type="text" id="coupleinfo" name="coupleinfo"><br><br>
+
+					</fieldset>
+
+					<br>
+					<fieldset>
+					  <legend>ENDEREÇO</legend>
+					  <label class="textlead" for="street">Rua:</label>
+					  <input style="width:567px;" type="text" id="street" name="street">
+
+					  <label class="num" for="num">Nº:</label>
+					  <input style="width:60px;" type="number" id="num" name="num"><br><br>
+
+					  <label for="neighborhood">Bairro:</label>
+					  <input style="width:257px;" type="text" id="neighborhood" name="neighborhood">
+
+					  <label for="city">Cidade:</label>
+					  <input type="text" id="city" name="city">
+
+					  <label for="cep">CEP:</label>
+					  <input style="width:100px;" type="text" id="cep" name="cep"><br><br>
+
+					  <label for="homephone">Tel. Residencial:</label>
+					  <input style="width:222px;" type="text" id="homephone" name="homephone">
+
+					  <label for="businessphone">Tel. Comercial:</label>
+					  <input style="width:222px;" type="text" id="businessphone" name="businessphone"><br><br>
+
+					  <label for="msgphone">Tel. Recado:</label>
+					  <input type="text" id="msgphone" name="msgphone">
+
+					  <label for="msgphonename">Nome:</label>
+					  <input style="width:376px;" type="text" id="msgphonename" name="msgphonename"><br><br>
+
+					  <label for="urgencyperson">Em caso de urgência chamar:</label>
+					  <input style="width:250px;" type="text" id="urgencyperson" name="urgencyperson">
+
+					  <label for="urgencyphone">Fone:</label>
+					  <input type="text" id="urgencyphone" name="urgencyphone"><br><br>
+
+					</fieldset>
+
+					<br>
+					<fieldset>
+					  <legend>PROCEDÊNCIA DO ALUNO</legend>
+					  <label class="textlead" for="studentschool">Escola:</label>
+					  <input style="width:632px;" type="text" id="studentschool" name="studentschool"><br><br>
+
+					  <label for="degree">Grau:</label>
+					  <input type="text" id="degree" name="degree">
+
+					  <label for="serie">Série:</label>
+					  <input type="text" id="serie" name="serie">
+
+					  <label for="course">Curso:</label>
+					  <input style="width:188px;" type="text" id="course" name="course"><br><br>
+
+					  <label for="studentcity">Cidade:</label>
+					  <input style="width:432px;" type="text" id="studentcity" name="studentcity">
+
+					  <label for="studentuf">UF:</label>
+					  <input type="text" id="studentuf" name="studentuf"><br><br>
+
+					  	<label for="schoolinfo">Já estudou nesta escola:</label>
+						<select style="width:66px;" name="schoolinfo" id="schoolinfo">
+							<option value=""></option>
+				  			<option value="sim">Sim</option>
+				  			<option value="nao">Não</option>
+						</select>
+
+						<label for="studyinfo">Já estudou na rede municipal de Taboão da Serra:</label>
+						<select style="width:66px;" name="studyinfo" id="studyinfo">
+							<option value=""></option>
+				  			<option value="sim">Sim</option>
+				  			<option value="nao">Não</option>
+						</select>
+
+					</fieldset>
+
+					<br><br>
+
+					<!-- <hr style="width:50%;text-align:left;margin-left:0"> -->
+					
+					<!-- <input type="text" id="func" name="func">
+					<hr style="width:400px;text-align:left;margin-left:">-->
+					<br><br>
+					<label for="func">Funcionário da U.E:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<label for="registration">Data da matrícula:</label>
+					<input type="date" id="registration" name=registration>
+
+					<!-- <button id="btnPrint" onclick="window.print()">Imprimir</button> -->
+
+					<!-- Hide print button when printing (style.css) --><br>
+					<input class="button" type="button" id="btnPrint" onclick="window.print();" value="Imprimir" />
+
+
+				</form>
+			</div>
+		</div>
+
+	</body>
+</html>
